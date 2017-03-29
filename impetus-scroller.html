@@ -17,7 +17,6 @@ Momentum scroller using impetus
         display: block;
         position: relative;
         overflow: hidden;
-        contain: content;
       }
 
       #container {
@@ -74,7 +73,8 @@ Momentum scroller using impetus
         /** current position */
         x: {
           type: Number,
-          value: 0
+          value: 0,
+          notify: true
         },
 
         /** Index of selected item */
