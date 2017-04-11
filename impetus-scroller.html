@@ -229,9 +229,9 @@ Momentum scroller using impetus
           }.bind(this));
 
           var last = layout[layout.length - 1];
-          if(last.left === undefined){
-            return 0;
-          }
+          if(last.left){
+
+          
           this._totalWidth = last.left + last.width;
           this.$.container.style.width = this._totalWidth + 'px';
 
@@ -248,7 +248,7 @@ Momentum scroller using impetus
           }
 
           this.fire('rendered');
-
+          }
         }.bind(this));
       },
 
