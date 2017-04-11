@@ -229,8 +229,7 @@ Momentum scroller using impetus
           }.bind(this));
 
           var last = layout[layout.length - 1];
-          if(last.left){
-
+         if(!isNaN(last.left)){
           
           this._totalWidth = last.left + last.width;
           this.$.container.style.width = this._totalWidth + 'px';
