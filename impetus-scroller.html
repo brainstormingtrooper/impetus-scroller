@@ -223,7 +223,7 @@ Momentum scroller using impetus
             var aspect = dimension.aspect;
             scaleX = position.width / dimension.width;
             scaleY = position.height / dimension.height;
-            var transform = 'translate(' + position.left/1.8 + 'px,0px) scale(1)';
+            var transform = 'translate(' + position.left/1.7 + 'px,0px) scale(1)';
             var element = this._elements[i];
             element.style.transform = transform;
           }.bind(this));
@@ -231,7 +231,7 @@ Momentum scroller using impetus
           var last = layout[layout.length - 1];
          if(last !== undefined && !isNaN(last.left)){
           
-          this._totalWidth = last.left/1.8 + last.width/1.8;
+          this._totalWidth = last.left/1.7 + last.width/1.7;
           this.$.container.style.width = this._totalWidth + 'px';
 
           if (this.loading && layout.length > 0) {
